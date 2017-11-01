@@ -7,7 +7,13 @@ describe('New Fixture Panel Screen', () => {
     var fixturePage = new FixturePage();
     var selectSite = new SiteSelectionPage();
 
+    before (function (){
+        browser.refresh();
+    });
+
+
     it('Click the Add Fixture Button to add a New Fixture', () => {
+        browser.sleep(4000);
         browser.wait(until.visibilityOf(fixturePage.addNewFixtureButton), waitTimeout);
         fixturePage.addNewFixtureButton.click();
     });

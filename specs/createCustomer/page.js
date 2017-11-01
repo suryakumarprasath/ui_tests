@@ -18,7 +18,7 @@ const Page = function () {
   this.form_contactEmail = $("#contact_email");
   this.form_saveCustomer_btn = $("#saveCustomer");
   this.searchByType = element(by.xpath("//*[@id='Customer-grid']/div[3]/div[1]/div[2]/input"));
-  this.selectedFirstRow = element(by.xpath("//*[@id='Customer-grid']/div[5]/div/div/div[1]"));
+  this.selectedFirstRow = element(by.xpath("//*[@id='Customer-grid']/div[5]/div/div/div[2]"));
   this.popUp = $('.noty_text');
   this.popUpMessage = $('.noty_message');
   this.popUpClose = $('.noty_close');
