@@ -8,7 +8,7 @@ var randomName = require('./util/random.js');
 exports.config = {
     framework: 'mocha',
     seleniumAddress: 'http://0.0.0.0:4444/wd/hub',
-    baseUrl: process.env.ui_test_url || 'https://netsense-cicd.sensity.com' ,
+    baseUrl: process.env.ui_test_url || 'https://nsn-local.sensity.com',
     directConnect: false,
     multiCapabilities: [
         // {
