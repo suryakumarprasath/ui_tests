@@ -8,7 +8,7 @@ var randomName = require('./util/random.js');
 exports.config = {
     framework: 'mocha',
     seleniumAddress: 'http://0.0.0.0:4444/wd/hub',
-    baseUrl: process.env.ui_test_url || 'https://nsn-local.sensity.com',
+    baseUrl: process.env.ui_test_url || 'https://netsense-siva.sensity.com',
     directConnect: true,
     multiCapabilities: [
         // {
@@ -47,7 +47,7 @@ exports.config = {
     ],
 
     onPrepare: () => {
-        waitTimeout = 8000
+        waitTimeout = 15000
         until = protractor.ExpectedConditions
         browser.ignoreSynchronization = true
         var width = 1425
@@ -72,7 +72,7 @@ exports.config = {
             takePassedScreenshot: false,
             clearOldScreenshots: true,
             jsonReport: false,
-            multiReport: true
+            multiReport: false
         },
         timeout: 600000
     },

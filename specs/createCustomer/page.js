@@ -19,6 +19,7 @@ const Page = function () {
   this.form_saveCustomer_btn = $("#saveCustomer");
   this.searchByType = element(by.xpath("//*[@id='Customer-grid']/div[3]/div[1]/div[2]/input"));
   this.selectedFirstRow = element(by.xpath("//*[@id='Customer-grid']/div[5]/div/div/div[2]"));
+  //this.selectedFirstRow = $('.ui-widget-content slick-row > slick-cell l1 r1')
   this.popUp = $('.noty_text');
   this.popUpMessage = $('.noty_message');
   this.popUpClose = $('.noty_close');

@@ -173,13 +173,13 @@ let sites = {
     siteVariable: {
         "name": "DemoLine" + date,
         "street1": " 700 Hidden Ridge",
-        "street2": "0",
+        "street2": "",
         "city": "Irving",
         "state": "Texas",
         "postal_code": "75038",
         "country": "United States",
-        "latitude": "32.876945",
-        "longitude": "-96.953288"
+        "latitude": "32.876657",
+        "longitude": "-96.953256"
     }, newSiteVariable: {
         "name": "DemoLine 01",
         "street1": "9830 Reseda Blvd",

@@ -38,7 +38,7 @@ describe('Create Daylight Harvesting profile under A Site', () => {
     });
 
     it("Should search for the group and add the Dh profile for it that was just created ", ()=>{
-        browser.sleep(5000);
+        browser.refresh();
         browser.wait(until.visibilityOf(createDaylightHarvesting.groupsGrid), waitTimeout);
         createDaylightHarvesting.searchGroup(groups.name);
         createDaylightHarvesting.showHideDetailsButton.click();
